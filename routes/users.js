@@ -2,8 +2,9 @@ var express = require('express');
 var router = express.Router();
 const helper = require('../helper/helper'); 
 
-helper.timezone();
 
+
+console.log(helper.timezone('india'));
 /* GET users listing. */
 // router.get('/', (req, res, next)=> 
 // {

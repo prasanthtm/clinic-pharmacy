@@ -34,23 +34,19 @@ module.exports = class helper
         });
     };
 
-    static timezone()
+    static timezone(Country)
     {
-        return new Promise((resolve,reject)=>
-        {
-            console.log("Inside");     
-            const abb = getCode("nepal")
-            console.log(abb);
-            const country = ct.getCountry(abb);
+        
+            const abbriviation = getCode(Country)   
+            const country = ct.getCountry(abbriviation);
             console.log(country.timezones[0]);
             // Create a Moment.js object representing the current date and time in the Pacific/Honolulu time zone
             const DateTime = moment.tz(country.timezones[0]);
             // Display the current date and time in the Pacific/Honolulu time zone
             let time = DateTime.format('YYYY-MM-DD HH:mm:ss')
-            console.log(time);
+    
+            return time
 
-
-        });
     };
 
 

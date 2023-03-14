@@ -1,0 +1,61 @@
+
+[{
+    "code" : 200,
+    "success" : true,
+    "message" : "success",
+    "data" : 
+    {
+        "settings" : 
+        {
+            "company_title " : "",
+            "menu_title"  : "",
+            "address" : "",
+            "email"  : "",
+            "phone" : "",
+            "favicon" : "",
+            "logo" : "",
+            "language" : 
+                        [
+                          {
+                            "id" : "",
+                            "name" : "" 
+                          }
+                        ],
+            "currency" : 
+                        [
+                            {
+                                "id" : "",
+                                "name" : "" 
+                            }
+                        ],
+            "discount_type" :  [
+                                    {
+                                        "id" : "",
+                                        "name" : "" 
+                                    }
+                                ] ,
+            "licence_number" : "",
+            "gst_no" : "",
+            "time_zone" : ""
+
+},
+  "page_custamization" :
+            {
+                "font_one" : "", 
+                "font_two" : "",
+                "body_bg_color" : "", 
+                "body_font_size" : "", 
+                "line_hight" : "",
+                "text_color" : "", 
+                "logo_text_color" : "",
+                "menu_bg_color" : "",
+                "menu_hover_color" : "",
+                "menu_font_color" : "" ,
+                "menu_font_size" : "",
+                "active_menu_color" : "",
+                "active_menu_bg_color" : "",
+                "status" : ""
+
+            }
+}
+}]
