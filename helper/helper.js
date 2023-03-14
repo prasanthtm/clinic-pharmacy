@@ -1,5 +1,4 @@
 const validator = require('email-validator');  // Importing the email-validator library and assigning it to validator variable
-const { v4: uuidv4 } = require('uuid'); // import uuid module for generating unique identifier   
 const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();  //validates international phone numbers
 const { getCode } = require('country-list');
 const ct = require('countries-and-timezones');
@@ -49,14 +48,11 @@ module.exports = class helper
 
     };
 
-    
-
-
     static fileUpload(attachments)
     {
         return new Promise((resolve, reject) =>
         {
-            console.log(attachments);
+            // console.log(attachments);
             if (!attachments)// || !attachments.file || !Array.isArray(attachments.file)) 
             {
                 console.log('#### Invalid attachments parameter ####');
@@ -65,11 +61,13 @@ module.exports = class helper
             else
             {
                 let file = attachments;
-                console.log(file);
+                // console.log(file);
                 let fileExtension = file.name.split('.').pop().toLowerCase(); // get the file extension
                 if (['png', 'jpg', 'xlsx'].includes(fileExtension)) 
                 {
-                    let filename = uuidv4() + '_' + file.name;
+                    // let currentDate = new Date().toISOString().replace(/:/g, '-').replace(/\./g, '-'); // generate current date and time
+                    let randomNumber = Math.floor(Math.random() * 1000000); // generate random number
+                    let filename = `${randomNumber}_${file.name}`; // use current date, random number and original file name to create a unique file name
                     console.log(filename);
                     file.mv('./attachments/'+filename,(err) => 
                     {
@@ -89,7 +87,7 @@ module.exports = class helper
                 }
             }
         });
-    }
+    };
 
     static passwordvalidation(password)
     {
@@ -108,7 +106,8 @@ module.exports = class helper
             }                        
         });        
     };
- static emailValidation(email)
+    
+    static emailValidation(email)
     {
         return new Promise((resolve,reject)=>
         {
@@ -126,7 +125,7 @@ module.exports = class helper
                 // });
             }            
         });
-    }
+    };
 
 
 
