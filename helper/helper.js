@@ -57,17 +57,17 @@ module.exports = class helper
         return new Promise((resolve, reject) =>
         {
             console.log(attachments);
-            if (!attachments || !attachments.file || !Array.isArray(attachments.file)) 
+            if (!attachments)// || !attachments.file || !Array.isArray(attachments.file)) 
             {
-                // console.log('#### Invalid attachments parameter ####');
+                console.log('#### Invalid attachments parameter ####');
                 return;
             }
             else
             {
-                let file = attachments.file;
+                let file = attachments;
                 console.log(file);
                 let fileExtension = file.name.split('.').pop().toLowerCase(); // get the file extension
-                if (['doc', 'jpeg', 'xlsx'].includes(fileExtension)) 
+                if (['png', 'jpg', 'xlsx'].includes(fileExtension)) 
                 {
                     let filename = uuidv4() + '_' + file.name;
                     console.log(filename);
@@ -82,6 +82,10 @@ module.exports = class helper
                             console.log('file uploaded');
                         }
                     });                
+                }
+                else
+                {
+                    console.log("Invalid Format");
                 }
             }
         });
@@ -129,4 +133,4 @@ module.exports = class helper
 
 
 
-}
+} 

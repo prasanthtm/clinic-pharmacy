@@ -39,6 +39,7 @@
             "time_zone" : ""
 
 },
+
   "page_custamization" :
             {
                 "font_one" : "", 
@@ -56,6 +57,34 @@
                 "active_menu_bg_color" : "",
                 "status" : ""
 
-            }
+            },
+
+    "languages" :
+    [{
+        "id" : "",
+        "name" : "",
+        "file" : "",
+        "abbreviation" : "",
+        "status" : ""
+    }],
+
+    "currencies" :
+    [{
+        "id" : "",
+        "name" : "",
+        "abbreviation" : "",
+        "symbol" : "",
+        "status" : ""
+    }],
+
+    "dicounts" :
+    [{
+        "id" : "",
+        "name" : "",
+        "type" : "",
+        "status" : ""
+    }]
+
+
 }
-}]
+}] 

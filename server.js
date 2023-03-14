@@ -9,7 +9,7 @@ app.listen(process.env.PORT, (err) =>
     }
     else
     {
-        console.log("Application stated running");
+        console.log("Application stated running on port number :-", +process.env.PORT);
     }
 
 })
