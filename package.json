@@ -3,19 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon server.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "countries-and-timezones": "^3.4.1",
+    "country-list": "^2.3.0",
     "dotenv": "^16.0.3",
-    "ejs": "~2.6.1",
     "email-validator": "^2.0.4",
     "express": "~4.16.1",
     "express-fileupload": "^1.4.0",
     "google-libphonenumber": "^3.2.32",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
+    "nodemon": "^2.0.21",
     "uuid": "^9.0.0"
   },
   "description": "",
