@@ -11,7 +11,10 @@
             "name" : "",
             "file" : "",
             "abbreviation" : "",
-            "status" : ""
+            "status" : "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
         }],
 
         "currencies" :
@@ -28,7 +31,10 @@
             "id" : "",
             "name" : "",
             "type" : "",
-            "status" : ""
+            "status" : "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
         }],
 
         "settings" : 
@@ -57,7 +63,10 @@
                             }] ,
             "licence_number" : "",
             "gst_no" : "",
-            "time_zone" : ""
+            "time_zone" : "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
         },
 
         "page_custamization" :
@@ -75,7 +84,10 @@
             "menu_font_size" : "",
             "active_menu_color" : "",
             "active_menu_bg_color" : "",
-            "status" : ""
+            "status" : "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
         },
 
         "banks": 
