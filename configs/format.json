@@ -5,6 +5,32 @@
     "message" : "success",
     "data" : 
     {
+        "languages" :
+        [{
+            "id" : "",
+            "name" : "",
+            "file" : "",
+            "abbreviation" : "",
+            "status" : ""
+        }],
+
+        "currencies" :
+        [{
+            "id" : "",
+            "name" : "",
+            "abbreviation" : "",
+            "symbol" : "",
+            "status" : ""
+        }],
+
+        "dicounts" :
+        [{
+            "id" : "",
+            "name" : "",
+            "type" : "",
+            "status" : ""
+        }],
+
         "settings" : 
         {
             "company_title " : "",
@@ -52,32 +78,76 @@
             "status" : ""
         },
 
-        "languages" :
+        "banks": 
+        [{
+            "name": "",
+            "ifsc_code": "",
+            "address": "",
+            "account_number": "",
+            "account_type": "",
+            "holder_name": "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
+        }],
+
+        "password_policies": 
         [{
             "id" : "",
             "name" : "",
-            "file" : "",
-            "abbreviation" : "",
-            "status" : ""
+            "value" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""        
         }],
 
-        "currencies" :
+        "roles" : 
         [{
             "id" : "",
-            "name" : "",
-            "abbreviation" : "",
-            "symbol" : "",
-            "status" : ""
+            "role_name": "",
+            "status" : "",
+            "created_at" : "" ,
+            "updated_at" : "",
+            "deleted_at" : ""
         }],
 
-        "dicounts" :
+        "users": 
         [{
             "id" : "",
-            "name" : "",
-            "type" : "",
-            "status" : ""
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "password": "",
+            "gender": "",
+            "phone": "",
+            "address": "",
+            "id_proof_type": "",
+            "id_proof_image": "",
+            "id_proof_no": "",
+            "description": "",
+            "profile_image": "",
+            "status": "",
+            "isadmin": "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
         }],
 
+        "customers":
+        [{
+            "id" : "",
+            "name": "",
+            "type": "",
+            "email": "",
+            "phone": "",
+            "age": "",
+            "status": "",
+            "created_at": "",
+            "updated_at": "",
+            "deleted_at": ""
+        }],
+        
         "manufacturers" :
         [{
             "id" : "",
@@ -99,7 +169,7 @@
             "updated_at" : "",
             "deleted_at" : ""
         }],
-    
+
         "taxation" :
         [{
             "id" : "",
@@ -141,6 +211,28 @@
             "created_at" : "",
             "updated_at" : "",
             "deleted_at" : ""
+        }],
+
+        "categories" : 
+        [{
+            "id" : "",
+            "name" : "",
+            "description" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+    
+        "units" : 
+        [{
+           "id": "" ,
+           "name": "" ,
+           "description" : "",
+           "status" : "" ,
+           "created_at" : "",
+           "updated_at" : "",
+           "deleted_at": "" 
         }],
 
         "role_modules" :
@@ -205,10 +297,31 @@
             "created_at" : "",
             "updated_at" : "",
             "deleted_at" : ""
+        }],
+
+        "boxes" :
+        [{
+            "id" : "",
+            "name" :"",
+            "unit" :"",
+            "unit_qty" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "stocks" :
+        [{
+            "id" : "",
+            "medicine_Id" :"",
+            "available_stock" :"",
+            "last_purchase" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
         }]
-
-
-
 
     }
 }] 
