@@ -15,76 +15,200 @@
             "favicon" : "",
             "logo" : "",
             "language" : 
-                        [
-                          {
+                        [{
                             "id" : "",
                             "name" : "" 
-                          }
-                        ],
+                          }],
             "currency" : 
-                        [
-                            {
+                        [{
                                 "id" : "",
                                 "name" : "" 
-                            }
-                        ],
-            "discount_type" :  [
-                                    {
-                                        "id" : "",
-                                        "name" : "" 
-                                    }
-                                ] ,
+                        }],
+            "discount_type" : 
+                            [{
+                                "id" : "",
+                                "name" : "" 
+                            }] ,
             "licence_number" : "",
             "gst_no" : "",
             "time_zone" : ""
+        },
 
-},
+        "page_custamization" :
+        {
+            "font_one" : "", 
+            "font_two" : "",
+            "body_bg_color" : "", 
+            "body_font_size" : "", 
+            "line_hight" : "",
+            "text_color" : "", 
+            "logo_text_color" : "",
+            "menu_bg_color" : "",
+            "menu_hover_color" : "",
+            "menu_font_color" : "" ,
+            "menu_font_size" : "",
+            "active_menu_color" : "",
+            "active_menu_bg_color" : "",
+            "status" : ""
+        },
 
-  "page_custamization" :
-            {
-                "font_one" : "", 
-                "font_two" : "",
-                "body_bg_color" : "", 
-                "body_font_size" : "", 
-                "line_hight" : "",
-                "text_color" : "", 
-                "logo_text_color" : "",
-                "menu_bg_color" : "",
-                "menu_hover_color" : "",
-                "menu_font_color" : "" ,
-                "menu_font_size" : "",
-                "active_menu_color" : "",
-                "active_menu_bg_color" : "",
-                "status" : ""
+        "languages" :
+        [{
+            "id" : "",
+            "name" : "",
+            "file" : "",
+            "abbreviation" : "",
+            "status" : ""
+        }],
 
-            },
+        "currencies" :
+        [{
+            "id" : "",
+            "name" : "",
+            "abbreviation" : "",
+            "symbol" : "",
+            "status" : ""
+        }],
 
-    "languages" :
-    [{
-        "id" : "",
-        "name" : "",
-        "file" : "",
-        "abbreviation" : "",
-        "status" : ""
-    }],
+        "dicounts" :
+        [{
+            "id" : "",
+            "name" : "",
+            "type" : "",
+            "status" : ""
+        }],
 
-    "currencies" :
-    [{
-        "id" : "",
-        "name" : "",
-        "abbreviation" : "",
-        "symbol" : "",
-        "status" : ""
-    }],
+        "manufacturers" :
+        [{
+            "id" : "",
+            "name" : "",
+            "email" : "",
+            "phone" : "",
+            "address1" : "",
+            "fax" : "",
+            "state" : "",
+            "country" : "",
+            "mobile" : "",
+            "email1" : "",
+            "contact" : "",
+            "address2" : "",
+            "city" : "",
+            "zip" : "",
+            "pre_bal" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+    
+        "taxation" :
+        [{
+            "id" : "",
+            "name" : "",
+            "percentage" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
 
-    "dicounts" :
-    [{
-        "id" : "",
-        "name" : "",
-        "type" : "",
-        "status" : ""
-    }]
+        "tax_details" :
+        [{
+            "id" : "",
+            "taxation_Id" : "",
+            "value1" : "",
+            "value2" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "user_roles" :
+        [{
+            "id" : "",
+            "user_Id" : "",
+            "role_Id" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "modules" :
+        [{
+            "id" : "",
+            "name" : "",
+            "activity" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "role_modules" :
+        [{
+            "id" : "",
+            "role_Id" : "",
+            "module_Id" : ""
+        }],
+
+        "distributors" :
+        [{
+            "id" : "",
+            "name" : "",
+            "contact_person_name" : "",
+            "contact_number" : "",
+            "taxation_number" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "dist_manufactures" :
+        [{
+            "id" : "",
+            "distributor_Id" : "",
+            "manufacturers_Id" : ""
+        }],
+
+        "medtypes" :
+        [{
+            "id" : "",
+            "name" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }],
+
+        "medicines" :
+        [{
+            "id" : "",
+            "barcodeqrcode" : "",
+            "name" : "",
+            "power" : "",
+            "generic_name" : "",
+            "box_size" : "",
+            "unit_Id" : "",
+            "shelf_name" : "",
+            "box_name" : "",
+            "m_details" : "",
+            "category_Id" : "",
+            "price_piece" : "",
+            "m_type" : "",
+            "image" : "",
+            "distributor_Id" : "",
+            "manufacturer_Id" : "",
+            "manufacturers_price" : "",
+            "taxation_per" :"",
+            "igta" : "",
+            "status" : "",
+            "created_at" : "",
+            "updated_at" : "",
+            "deleted_at" : ""
+        }]
 
 
-}
+
+
+    }
 }] 
