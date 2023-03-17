@@ -68,7 +68,7 @@ module.exports = class helper
                     // let currentDate = new Date().toISOString().replace(/:/g, '-').replace(/\./g, '-'); // generate current date and time
                     let randomNumber = Math.floor(Math.random() * 1000000); // generate random number
                     let filename = `${randomNumber}_${file.name}`; // use current date, random number and original file name to create a unique file name
-                    console.log(filename);
+                    // console.log(filename);
                     file.mv('./attachments/'+filename,(err) => 
                     {
                         if(err)
@@ -107,29 +107,34 @@ module.exports = class helper
         });        
     };
     
-    static emailValidation(email)
+    static emailValidation(email) 
     {
-        return new Promise((resolve,reject)=>
+        return new Promise((resolve, reject) => 
         {
-            if(validator.validate(email)) // Here the checking of the email value is done
+            const regex = (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?$/);    
+            if (regex.test(email)) 
             {
-                // next();  // If correct then next()
-                console.log("True");
+                const domain = email.split('@')[1]; // get domain name after '@' symbol
+                const domainParts = domain.split('.'); // split domain name by '.' separator
+                //console.log(domainParts); // output: ['gmail', 'com', 'com']
+                if(domainParts[1] === domainParts[2])
+                {
+                    console.log('False');
+                    // console.log('Invalid Email');
+                }
+                else
+                {
+                    console.log('true');
+                    // console.log('Valid Email');
+                }
             } 
-            else 
+            else
             {
-                console.log("False");
-                // res.status(401).json
-                // ({
-                //     message: "Invalid email"   // Or error message
-                // });
-            }            
+            console.log('False');
+            }
         });
     };
+}; 
 
 
 
-
-
-
-} 
